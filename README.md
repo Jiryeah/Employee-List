@@ -25,7 +25,7 @@ Build a Node.js command-line application that takes in information about employe
 ## Link to deployed application
 - https://jiryeah.github.io/Employee-List/
 
-## Video of deployed applicaiton
+## Video of deployed application
 -
 
 
