@@ -1,6 +1,25 @@
 {
   "dependencies": {
-    "jest": "^27.4.7",
     "node": "^17.3.1"
-  }
+  },
+  "devDependencies": {
+    "jest": "^27.4.7"
+  },
+  "name": "employee-list",
+  "description": "## Summary  Build a Node.js command-line application that takes in information about employees on a software engineering team and generates an HTML webpage that displays summaries for each person. Testing, through Jest, will be used to ensure correct code is used.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jiryeah/Employee-List.git"
+  },
+  "author": "Faissal Shabani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jiryeah/Employee-List/issues"
+  },
+  "homepage": "https://github.com/Jiryeah/Employee-List#readme"
 }
