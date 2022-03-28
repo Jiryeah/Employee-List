@@ -5,40 +5,40 @@ test('Can create a new instance from Employee object', () => {
   expect(typeof newInstance).toBe('object');
 });
 
-test('Test email', () => {
-  const testEmail = 'faissal5@testmail.com';
-  const newInstance = new Employee(testEmail);
-  expect(newInstance.email).toBe(testEmail);
-});
-
-test('Test id', () => {
-  const testId = 5;
-  const newInstance = new Employee(testId);
-  expect(newInstance.id).toBe(testId);
-});
-
 test('Test names', () => {
   const testName = 'Faissal';
   const newInstance = new Employee(testName);
   expect(newInstance.name).toBe(testName);
 });
 
-test('Can retrieve email w/ getEmail()', () => {
-  const testEmail = 'faissal5@testmail.com';
-  const newInstance = new Employee(testEmail);
-  expect(newInstance.getEmail()).toBe(testEmail);
+test('Test id', () => {
+  const testId = 5;
+  const newInstance = new Employee('Test', testId);
+  expect(newInstance.id).toBe(testId);
 });
 
-test('Can retrieve id w/ getId()', () => {
-  const testId = 5;
-  const newInstance = new Employee(testId);
-  expect(newInstance.getId()).toBe(testId);
+test('Test email', () => {
+  const testEmail = 'faissal5@testmail.com';
+  const newInstance = new Employee('Test', 5, testEmail);
+  expect(newInstance.email).toBe(testEmail);
 });
 
 test('Can retrieve name w/ getName()', () => {
   const testName = 'Faissal';
   const newInstance = new Employee(testName);
   expect(newInstance.getName()).toBe(testName);
+});
+
+test('Can retrieve id w/ getId()', () => {
+  const testId = 5;
+  const newInstance = new Employee('Test', testId);
+  expect(newInstance.getId()).toBe(testId);
+});
+
+test('Can retrieve email w/ getEmail()', () => {
+  const testEmail = 'faissal5@testmail.com';
+  const newInstance = new Employee('Test', 5, testEmail);
+  expect(newInstance.getEmail()).toBe(testEmail);
 });
 
 test('getRole() returns Employee', () => {

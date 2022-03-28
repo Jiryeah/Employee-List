@@ -15,6 +15,5 @@ test('Testing getGitHub()', () => {
 test('Testing getRole()', () => {
   const returnValue = 'Engineer';
   const newInstance = new Engineer('Test', 3, 'test3@testmail.com', 'GitHub');
-  l;
   expect(newInstance.getRole()).toBe(returnValue);
 });
