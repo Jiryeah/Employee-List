@@ -12,7 +12,7 @@ test('Test email', () => {
 });
 
 test('Test id', () => {
-  const testId = '5';
+  const testId = 5;
   const newInstance = new Employee(testId);
   expect(newInstance.id).toBe(testId);
 });
