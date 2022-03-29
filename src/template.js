@@ -96,14 +96,14 @@ module.exports = (team) => {
     <body>
       <div class="container-fluid">
           <div class="row">
-              <div class="col-12 jumbotron mb-3 team-heading">
+              <div class="col-12 jumbotron mb-3 team-header">
                   <h1 class="text-center">My Team</h1>
               </div>
           </div>
       </div>
       <div class="container">
           <div class="row">
-              <div class="team-area col-12 d-flex justify-content-center">
+              <div class="team-div col-12 d-flex justify-content-center">
                   ${renderTeam(team)}
               </div>
           </div>
