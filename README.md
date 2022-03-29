@@ -44,6 +44,8 @@ THEN I exit the application, and the HTML is generated
 
 ## Walkthrough Video
 
+- Located within assets directory
+
 ### Technologies Used
 
 - HTML
