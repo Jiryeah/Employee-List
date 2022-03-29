@@ -49,7 +49,7 @@ THEN I exit the application, and the HTML is generated
 
 ## Walkthrough Video
 
--
+- <iframe src="https://drive.google.com/file/d/1Dl-dp7QMMIr29x92-ejr1U7oFDdIcUsD/preview" width="640" height="480"></iframe>
 
 ### Technologies Used
 
