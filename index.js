@@ -71,11 +71,11 @@ const startApp = () => {
         );
         roster.push(manager);
         rosterId.push(userInput.managerId);
-        chooseTeam();
+        createRoster();
       });
   };
 
-  const chooseTeam = () => {
+  function createRoster() {
     inquirer
       .prompt([
         {
@@ -88,18 +88,18 @@ const startApp = () => {
       .then((userInput) => {
         switch (userInput.choiceSelection) {
           case 'Intern':
-            addIntern();
+            createIntern();
             break;
           case 'Engineer':
-            addEngineer();
+            createEngineer();
             break;
           default:
-            createTeam();
+            createRoster();
         }
       });
-  };
+  }
 
-  const addIntern = () => {
+  const createIntern = () => {
     inquirer
       .prompt([
         {
@@ -162,11 +162,11 @@ const startApp = () => {
         );
         roster.push(intern);
         rosterId.push(userInputs.internsId);
-        createTeam();
+        createRoster();
       });
   };
 
-  const addEngineer = () => {
+  const createEngineer = () => {
     inquirer
       .prompt([
         {
@@ -229,11 +229,11 @@ const startApp = () => {
         );
         roster.push(engineer);
         rosterId.push(userInputs.engineersId);
-        createTeam();
+        createRoster();
       });
   };
 
-  const createTeam = () => {
+  const createRoster = () => {
     fs.writeFileSync(outPath, generatePage(roster), 'utf-8');
   };
 
