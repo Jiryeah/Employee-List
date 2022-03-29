@@ -42,11 +42,7 @@ WHEN I decide to finish building my team
 THEN I exit the application, and the HTML is generated
 ```
 
-
 ## Walkthrough Video
-
-- ![image](https://user-images.githubusercontent.com/92201576/160529504-1b505ea0-1b57-46a1-89e1-fab9d07470e7.png)
-
 
 ### Technologies Used
 
