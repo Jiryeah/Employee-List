@@ -4,7 +4,6 @@
 
 - [User Story](#user-story)
 - [Requirements](#requirements)
-- [Deployed Application](#deployed-application)
 - [Screenshot](#screenshot)
 - [Walkthrough Video](#walkthrough-video)
 - [Technologies Used](#technologies-used)
@@ -43,13 +42,10 @@ WHEN I decide to finish building my team
 THEN I exit the application, and the HTML is generated
 ```
 
-## Deployed Application
-
-- https://jiryeah.github.io/Employee-List/
 
 ## Walkthrough Video
 
-- <iframe src="https://drive.google.com/file/d/1Dl-dp7QMMIr29x92-ejr1U7oFDdIcUsD/preview" width="640" height="480"></iframe>
+- 
 
 ### Technologies Used
 
