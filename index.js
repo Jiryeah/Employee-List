@@ -4,13 +4,14 @@ const Engineer = require('./lib/Engineer');
 const inquirer = require('inquirer');
 const path = require('path');
 const fs = require('fs');
-const generatePage = require('./src/template.js');
 // paths
-const OUT_DIR = path.resolve(__dirname, 'output');
-const outPath = path.join(OUT_DIR, 'team.html');
+const OUTPUT_DIR = path.resolve(__dirname, 'output');
+const outputPath = path.join(OUTPUT_DIR, 'team.html');
 
-const rosterId = [];
+const generatePage = require('./src/template');
+
 const roster = [];
+const rosterId = [];
 
 const startApp = () => {
   const createManagement = () => {
@@ -53,7 +54,7 @@ const startApp = () => {
         {
           type: 'input',
           name: 'managerOffice',
-          message: "What is the newe manager's office number?",
+          message: "What is the new manager's office number?",
           validate: (userInput) => {
             if (userInput !== '') {
               return true;
@@ -94,7 +95,7 @@ const startApp = () => {
             createEngineer();
             break;
           default:
-            createRoster();
+            renderRoster();
         }
       });
   }
@@ -144,7 +145,7 @@ const startApp = () => {
         {
           type: 'input',
           name: 'internsSchool',
-          message: "What is your intern's school?",
+          message: 'What school did the intern come from?',
           validate: (userInput) => {
             if (userInput !== '') {
               return true;
@@ -233,8 +234,12 @@ const startApp = () => {
       });
   };
 
-  const createRoster = () => {
-    fs.writeFileSync(outPath, generatePage(roster), 'utf-8');
+  const renderRoster = () => {
+    if (!fs.existsSync(OUTPUT_DIR)) {
+      fs.mkdirSync(OUTPUT_DIR);
+    }
+
+    fs.writeFileSync(outputPath, generatePage(roster), 'utf-8');
   };
 
   createManagement();
