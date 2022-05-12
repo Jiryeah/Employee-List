@@ -10,7 +10,7 @@
 
 # Summary
 
-Build a Node.js command-line application that takes in information about employees on a software engineering team and generates an HTML webpage that displays summaries for each person. Testing, through Jest, will be used to ensure correct code is used.
+This Node.js command-line application takes in information about employees on a software engineering team and generates an HTML webpage that displays summaries for each person. Testing, through Jest, will be used to ensure correct code is used.
 
 # User Story
 
